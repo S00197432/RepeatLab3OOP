@@ -9,6 +9,7 @@ namespace RepeatLab3OOP
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             Subject SBJ1 = new Subject("Databases", "Padraig Harte", 1);
@@ -17,14 +18,14 @@ namespace RepeatLab3OOP
             Subject SBJ4 = new Subject("OOP", "Keith McManus", 2);
 
             List<Subject> SubjectList = new List<Subject>();
-
+            List<Subject> SubjectList1 = new List<Subject>();
             SubjectList.Add(SBJ1);
             SubjectList.Add(SBJ2);
-            SubjectList.Add(SBJ3);
-            SubjectList.Add(SBJ4);
+            SubjectList1.Add(SBJ3);
+            SubjectList1.Add(SBJ4);
 
-            Student ST1 = new Student("Adam", "22/07/99");
-            Student ST2 = new Student("Luke", "25/07/99");
+            Student ST1 = new Student("Adam", "22/07/99",SubjectList);
+            Student ST2 = new Student("Luke", "25/07/99",SubjectList1);
 
             List<Student> STlist = new List<Student>();
 
