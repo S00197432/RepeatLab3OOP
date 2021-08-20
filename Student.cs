@@ -11,16 +11,18 @@ namespace RepeatLab3OOP
         public string Name { get; set; }
         public string DOB { get; set; }
         public List<Subject> SubjectList { get; set; }
-        public Student(string name, string dob, List<Subject> subjects)
+        public int Age { get; set; }
+        public Student(string name, string dob, List<Subject> subjects, int age)
         {
             Name = name;
             DOB = dob;
             SubjectList = subjects;
+            Age = age;
         }
         
         public override string ToString()
         {
-            return string.Format($"{Name} {DOB} {SubjectList}");
+            return string.Format($"{Name} {DOB} {SubjectList} {Age}");
         }
         
     }
